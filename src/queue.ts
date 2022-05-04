@@ -9,7 +9,7 @@ class Queue {
     this.rear = -1;
   }
 
-  addRear(element: number) {
+  addRear(element: number) { // Big O: O(1)
     if (this.rear == this.arr.length - 1) {
       console.log("Queue is full");
       return;
@@ -26,7 +26,7 @@ class Queue {
     this.arr[this.rear] = element;
   }
 
-  deleteFront(): number {
+  deleteFront(): number { // Big O: O(1)
     // check if queue is empty
     if(this.front == -1) {
       console.log("Queue is empty");

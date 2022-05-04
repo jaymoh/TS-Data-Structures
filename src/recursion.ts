@@ -1,9 +1,10 @@
 class Recursion {
-  public static fact(n: number): number {
+
+  fact(n: number): number { // Big O: O(n)
     if (n <= 1) {
       return 1; // base case
     }
 
-    return n * this.fact(n - 1); // Big O: O(n) // Linear time
+    return n * this.fact(n - 1);
   }
 }

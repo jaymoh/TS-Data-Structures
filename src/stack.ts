@@ -7,7 +7,7 @@ class Stack {
     this.top = -1
   }
 
-  push(element: number) {
+  push(element: number) { // Big O: O(1)
     // check if stack is full
     if (this.top === this.arr.length - 1) {
       console.log('Stack is full')
@@ -17,7 +17,7 @@ class Stack {
     this.arr[this.top] = element
   }
 
-  pop() : number {
+  pop() : number { // Big O: O(1)
     // check if stack is empty
     if (this.top === -1) {
       console.log('Stack is empty')

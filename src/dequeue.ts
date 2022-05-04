@@ -9,7 +9,7 @@ class Dequeue {
     this.rear = -1;
   }
 
-  addRear(element: number) {
+  addRear(element: number) { // Big O: O(1)
     // check if the dequeue is full
     if (this.rear == this.arr.length - 1) {
       console.log("Queue is full");
@@ -27,7 +27,7 @@ class Dequeue {
     this.arr[this.rear] = element;
   }
 
-  addFront(element: number) {
+  addFront(element: number) { // Big O: O(1)
     // check if front is set
     if (this.front == 0) {
       console.log("Front is full");
@@ -45,7 +45,7 @@ class Dequeue {
     this.arr[this.front] = element;
   }
 
-  deleteFront(): number {
+  deleteFront(): number { // Big O: O(1)
     // check if it is empty
     if (this.front == -1) {
       console.log("Queue is empty");
@@ -66,7 +66,7 @@ class Dequeue {
     return temp;
   }
 
-  deleteRear(): number {
+  deleteRear(): number { // Big O: O(1)
     // check if it is empty
     if (this.front == -1) {
       console.log("Queue is empty");

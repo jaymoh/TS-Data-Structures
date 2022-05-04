@@ -9,7 +9,7 @@ class CircularQueue {
     this.rear = -1
   }
 
-  addRear(element: number) {
+  addRear(element: number) { // Big O: O(1)
     // check if queue is full
     if ((this.rear - this.front == this.arr.length - 1)
       || (this.front - this.rear == 1)) {
@@ -27,7 +27,7 @@ class CircularQueue {
     this.arr[this.rear] = element
   }
 
-  deleteFront(): number {
+  deleteFront(): number { // Big O: O(1)
     // check if queue is empty
     if (this.front == -1) {
       return -1;
