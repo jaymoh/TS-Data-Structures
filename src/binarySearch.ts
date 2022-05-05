@@ -10,7 +10,7 @@ class BinarySearch {
   }
 
   // establish the start and end points
-  binSearch(target: number, start: number, end: number): number { // Big O: O(log n)
+  binSearch(target: number, start: number, end: number): number { // Big O: O(log n) - logarithmic
     // establish the middle point
     let middle = Math.floor((end + start) / 2);
 

@@ -9,7 +9,7 @@ class CircularQueue {
     this.rear = -1
   }
 
-  addRear(element: number) { // Big O: O(1)
+  addRear(element: number) { // Big O: O(1) - constant time
     // check if queue is full
     if ((this.rear - this.front == this.arr.length - 1)
       || (this.front - this.rear == 1)) {

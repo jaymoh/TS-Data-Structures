@@ -45,7 +45,7 @@ class Dequeue {
     this.arr[this.front] = element;
   }
 
-  deleteFront(): number { // Big O: O(1)
+  deleteFront(): number { // Big O: O(1) -constant time
     // check if it is empty
     if (this.front == -1) {
       console.log("Queue is empty");
@@ -66,7 +66,7 @@ class Dequeue {
     return temp;
   }
 
-  deleteRear(): number { // Big O: O(1)
+  deleteRear(): number { // Big O: O(1) -constant time
     // check if it is empty
     if (this.front == -1) {
       console.log("Queue is empty");
