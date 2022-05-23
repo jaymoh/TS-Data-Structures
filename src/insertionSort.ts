@@ -1,6 +1,6 @@
 class InsertionSort {
 
-  private arr: number[]
+  private readonly arr: number[]
 
   constructor(arr:number[]) {
     this.arr = arr
