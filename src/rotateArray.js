@@ -8,12 +8,12 @@ function rotateArray(A, K) { // Big O(N)
   return result;
 }
 
-function solution(A, K) {
+function solution(A, K) { // Big O(N)
   let len = A.length
   for (let i=1; i<=K; i++) {
     let temp = A[0]
 
-    for (let j = 0; j<len; j++) {
+    for (let j = 0; j<len; j++) { // Big O(N)
       if (j === len-1){
         A[0] = temp
       } else{
